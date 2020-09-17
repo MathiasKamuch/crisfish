@@ -1,0 +1,47 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-on-scroll {
+  display: flex;
+  position: fixed;
+  z-index: 22;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  box-shadow: $boxshadow;
+  transform: translateY(-100px);
+  transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.moving {
+  transform: translateY(0);
+}
+
+.logo-on-scroll {
+  position: absolute;
+  width: 200px;
+  left: 50px;
+}
+
+#menu-item-40 {
+  position: relative;
+
+  a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: white;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+
+  a:hover::before {
+    height: 100%;
+  }
+}

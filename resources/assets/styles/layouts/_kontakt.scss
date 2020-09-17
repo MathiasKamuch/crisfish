@@ -1,0 +1,90 @@
+.kontakt-center-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.kontakt-flex-helper {
+  width: 75%;
+  margin-top: 50px;
+}
+
+.kontakt-meet-content {
+  width: 40%;
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: $text;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 16px;
+    color: $greytext;
+  }
+}
+
+.kontakt-button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.kontakt-green-button {
+  background-color: #66884291;
+  padding: 10px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+  flex-direction: row;
+  transition: ease-in-out 0.2s;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #668842;
+  }
+}
+
+.mixcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.person-container {
+  width: 100%;
+  height: 100%;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .personimage {
+    width: 138px;
+    height: 179px;
+    object-fit: cover;
+  }
+
+  h2 {
+    color: $text;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $greytext;
+  }
+}

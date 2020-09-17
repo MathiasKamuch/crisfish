@@ -1,0 +1,13 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+$text: #668842;
+$boxshadow: 0 5px 12px 0 rgba(0, 0, 0, 0.25);
+$greytext: #373e42;
